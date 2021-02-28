@@ -477,7 +477,9 @@ def main():
         # create processes for unpacking archives
         for i in range(0, threads):
             process = multiprocessing.Process(target=downloadfile,
-                                              args=(download_queue, fail_queue, repository['mirror']))
+                                              args=(download_queue,
+                                                    fail_queue,
+                                                    repository['mirror']))
             processes.append(process)
 
         # start all the processes

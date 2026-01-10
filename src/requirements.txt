@@ -12,3 +12,4 @@ icalendar
 elasticsearch
 dockerfile-parse
 defusedxml
+urllib3>=2.6.3 # not directly required, pinned by Snyk to avoid a vulnerability
